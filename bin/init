@@ -1,0 +1,3 @@
+#!/user/bin/env ruby -wU
+
+puts "I like turtles"
