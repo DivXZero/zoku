@@ -23,7 +23,9 @@ module Zoku
     def new(target_path)
       Commands::New.new(target_path).init
       if options[:build]
-        exec "docker-compose build"
+        exec "docker-compose build && \
+              docker-compose run web bundle exec \
+              rake db:create db:migrate db:seed"
       end
     end
 
