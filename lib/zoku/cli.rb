@@ -1,4 +1,4 @@
-require 'thor'
+require 'zoku/commands/new'
 
 $thor_runner = nil
 
@@ -19,11 +19,8 @@ module Zoku
     long_desc <<-NEW_PROJECT
       `new PROJECT` will generate a new opinionated rails project
     NEW_PROJECT
-    def new(project)
-      exec "rails new #{project} -q --database=postgresql --skip-bundle && \
-            cd #{project} && \
-            git init --quiet && git add -A && \
-            git commit -m \"Project setup with Zoku :paw_prints:\" --quiet"
+    def new(target_path)
+      Commands::New.new(target_path).init
     end
 
     # Initializes a new or existing project
