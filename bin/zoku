@@ -2,4 +2,4 @@
 
 require 'zoku'
 
-puts 'Bark bark!'
+Zoku::Generator.start(ARGV)
