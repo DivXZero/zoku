@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "bin"
-  spec.executables   = ["zoku", "init"]
+  spec.executables   = ["zoku"]
   spec.require_paths = ["lib"]
 
   spec.add_dependency "rails", "~> 5.0.0.1"
@@ -37,4 +37,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "yard", "~> 0.9.8"
 end
