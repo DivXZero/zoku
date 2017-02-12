@@ -1,3 +1,3 @@
 module Zoku
-  VERSION = "0.0.0-alpha"
+  VERSION = "0.0.0-beta"
 end

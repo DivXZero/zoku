@@ -1,13 +1,14 @@
 require 'thor'
-require 'version'
+
 
 module Zoku
   class Generator < Thor
-    desc "version", "Print Zoku Version"
-    long_desc "Print out the currently installed Zoku gem version"
-    def version
-      puts "Zoku v#{Zoku::VERSION}"
-    end
+    #desc "version", "Print Zoku Version"
+    #long_desc "Print out the currently installed Zoku gem version"
+    #def version
+      #puts "Zoku v#{Zoku::VERSION}"
+      #puts 'o_O'
+    #end
 
     desc "new PROJECT", "Generate a new rails project"
     long_desc <<-NEW_PROJECT
