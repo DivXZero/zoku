@@ -1,3 +1,3 @@
 module Zoku
-  VERSION = "0.0.0-rc"
+  VERSION = "0.0.1-rc"
 end
