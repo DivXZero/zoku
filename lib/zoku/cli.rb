@@ -1,6 +1,5 @@
 require 'thor'
 
-
 module Zoku
   class Generator < Thor
     #desc "version", "Print Zoku Version"
