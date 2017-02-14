@@ -20,12 +20,13 @@ module Zoku
       `new PROJECT` will generate a new opinionated rails project
     NEW_PROJECT
     option :build
+    option :run
     def new(target_path)
       Commands::New.new(target_path).init
       if options[:build]
-        exec "docker-compose build && \
-              docker-compose run web bundle exec \
-              rake db:create db:migrate db:seed"
+        puts `docker-compose build`
+        puts `docker-compose run web bundle exec rake db:create db:migrate db:seed`
+        puts `docker-compose up` if options[:run]
       end
     end
 

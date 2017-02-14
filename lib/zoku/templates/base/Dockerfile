@@ -1,6 +1,6 @@
 FROM ruby:2.3.3
 
-ENV APP_PATH /webapp
+ENV APP_PATH /zoku_base
 
 MAINTAINER Nicholaus Brabant <nicholaus.brabant@gmail.com>
 
